@@ -20,7 +20,7 @@ label = {0:'negative', 1:'positive'}
 
 @app.route('/')
 def home():
-    return 'I hate you.'
+    return 'Model deployed.'
 
 
 def predict(model, text):
@@ -37,7 +37,7 @@ def extract():
     }
     """
     if request.method == 'GET':
-        description = request.args.get('text', '')
+        description = request.args.get('I hate you.', '')
         
         result = {
             'sentiment': predict(model, description)
