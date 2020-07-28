@@ -20,7 +20,7 @@ label = {0:'negative', 1:'positive'}
 
 @app.route('/')
 def home():
-    return 'It works.'
+    return 'I hate you.'
 
 
 def predict(model, text):
